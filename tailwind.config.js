@@ -5,7 +5,14 @@ module.exports = {
     "./containers/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        jalnan: ["jalnan"],
+      },
+      backgroundImage: {
+        "shape-div": "url('/waves.svg')",
+      },
+    },
   },
   plugins: [],
 };

@@ -7,16 +7,16 @@ export default function MainIntroduceSection() {
       <Head>
         <title>test</title>
       </Head>
-      <div className="flex flex-col items-center justify-center text-white h-72 md:h-96 bg-blue-600">
-        <div className="flex items-center flex-col md:flex-row">
-          <h1 className="md:text-6xl font-semibold text-4xl">
-            URL 커스터마이징
+      <div className="flex flex-col items-center justify-center h-64 text-white bg-blue-600 md:h-96">
+        <div className="flex flex-col items-center md:flex-row">
+          <h1 className="text-4xl font-semibold md:text-6xl">
+            링크 커스터마이징
           </h1>
-          <h1 className="md:text-6xl font-semibold text-4xl ml-5">
+          <h1 className="ml-5 text-4xl font-semibold md:text-6xl">
             'gourl.kr'
           </h1>
         </div>
-        <div className="md:text-3xl mt-7 font-semibold text-2xl">
+        <div className="text-2xl font-semibold md:text-3xl mt-7">
           <TypewriterComponent
             onInit={(type) => {
               type.typeString("gourl.kr/pQdkc2");
@@ -39,11 +39,10 @@ export default function MainIntroduceSection() {
           />
         </div>
       </div>
-      <div
-        className="h-16 md:h-28 relative top-[-1px]"
-        style={{
-          backgroundImage: "url('/waves.svg')",
-        }}
+      <img
+        className="w-full select-none h-10 md:h-28 relative top-[-1px]"
+        src="waves.svg"
+        draggable="false"
       />
     </>
   );

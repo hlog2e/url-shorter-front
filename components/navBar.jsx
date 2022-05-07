@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
@@ -8,9 +6,9 @@ export default function NavBar() {
   const [dropDownOpened, setDropDownOpened] = useState(false);
   return (
     <div>
-      <header className="flex justify-center h-14 ">
+      <header className="flex justify-center h-14">
         <div className="container flex items-center justify-between max-w-6xl px-6 ">
-          <span className=" font">gourl.kr</span>
+          <strong className="text-2xl cursor-pointer font-jalnan">GOURL</strong>
           <nav className="hidden md:container md:justify-between md:w-1/4 md:flex">
             <div className="cursor-pointer">소개</div>
             <div className="cursor-pointer">지원</div>
