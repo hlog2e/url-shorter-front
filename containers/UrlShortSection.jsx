@@ -16,7 +16,7 @@ export default function UrlShortSection() {
           />
           <span className="flex mt-6 mb-2">
             <FontAwesomeIcon icon={faWandMagicSparkles} className="p-2" />
-            <p className="p-1 font-semibold">커스터마이징</p>
+            <p className="p-1 font-semibold">커스터마이징 (선택)</p>
           </span>
           <input
             className="w-full px-3 py-3 border rounded-lg shadow focus:ring focus:outline-none focus:bg-white"

@@ -4,10 +4,12 @@ import UrlShortSection from "../containers/UrlShortSection";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <NavBar />
-      <MainIntroduceSection />
-      <UrlShortSection />
-    </div>
+      <section className="h-[calc(100vh-56px)] ">
+        <MainIntroduceSection />
+        <UrlShortSection />
+      </section>
+    </>
   );
 }
