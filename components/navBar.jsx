@@ -7,7 +7,7 @@ export default function NavBar() {
   const [dropDownOpened, setDropDownOpened] = useState(false);
   return (
     <>
-      <header className="fixed top-0 left-0 right-0 ">
+      <header className="fixed top-0 left-0 right-0 bg-white ">
         <div className="flex justify-center h-14">
           <div className="container flex items-center justify-between max-w-6xl px-6 ">
             <Link href="/">

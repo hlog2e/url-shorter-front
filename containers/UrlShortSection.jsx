@@ -1,5 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink, faWandMagicSparkles } from "@fortawesome/free-solid-svg-icons";
+import {
+  faLink,
+  faWandMagicSparkles,
+  faCircleChevronDown,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function UrlShortSection() {
   return (
@@ -29,6 +33,11 @@ export default function UrlShortSection() {
           </span>
         </form>
       </div>
+
+      <FontAwesomeIcon
+        icon={faCircleChevronDown}
+        className="absolute text-2xl text-gray-400 opacity-50 animate-bounce left-1/2 right-1/2 bottom-10"
+      />
     </>
   );
 }

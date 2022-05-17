@@ -1,13 +1,9 @@
 import TypewriterComponent from "typewriter-effect";
-import Head from "next/head";
 
 export default function MainIntroduceSection() {
   return (
     <>
-      <Head>
-        <title>test</title>
-      </Head>
-      <div className="flex flex-col items-center justify-center h-64 text-white bg-blue-600 md:h-96 mt-14">
+      <div className="flex flex-col items-center justify-center text-white bg-blue-600 h-2/5 md: mt-14">
         <div className="flex flex-col items-center md:flex-row">
           <h1 className="text-4xl font-semibold md:text-6xl">
             링크 커스터마이징
@@ -37,7 +33,7 @@ export default function MainIntroduceSection() {
         </div>
       </div>
       <img
-        className="w-full select-none h-10 md:h-28 relative top-[-1px]"
+        className="w-full select-none h-10 md:h-28 relative top-[-1px] "
         src="waves.svg"
         draggable="false"
       />
