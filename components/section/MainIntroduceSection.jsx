@@ -1,9 +1,10 @@
 import TypewriterComponent from "typewriter-effect";
+import DivWaves from "../../public/waves.svg";
 
 export default function MainIntroduceSection() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center text-white bg-blue-600 h-2/5 md: mt-14">
+      <div className="flex flex-col items-center justify-center h-56 text-white bg-blue-600 md:h-80">
         <div className="flex flex-col items-center md:flex-row">
           <h1 className="text-4xl font-semibold md:text-6xl">
             링크 커스터마이징
@@ -21,7 +22,7 @@ export default function MainIntroduceSection() {
               type.typeString("나만의 링크로 기억하기 쉽게!");
               type.pauseFor(1500);
               type.deleteAll();
-              type.typeString("gourl.kr/내맘대로단축링크");
+              type.typeString("gourl.kr/나만의링크");
               type.pauseFor(1500);
               type.deleteAll();
               type.typeString("단축 링크는 gourl.kr");
@@ -32,11 +33,7 @@ export default function MainIntroduceSection() {
           />
         </div>
       </div>
-      <img
-        className="w-full select-none h-10 md:h-28 relative top-[-1px] "
-        src="waves.svg"
-        draggable="false"
-      />
+      <DivWaves className="w-full h-10 -mt-[1px] md:h-28" />
     </>
   );
 }

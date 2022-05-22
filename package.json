@@ -10,16 +10,15 @@
     "export": "next build && next export"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.1.1",
-    "@fortawesome/free-regular-svg-icons": "^6.1.1",
-    "@fortawesome/free-solid-svg-icons": "^6.1.1",
-    "@fortawesome/react-fontawesome": "^0.1.18",
+    "axios": "^0.27.2",
     "next": "12.1.5",
     "react": "18.0.0",
+    "react-copy-to-clipboard": "^5.1.0",
     "react-dom": "18.0.0",
     "typewriter-effect": "^2.18.2"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
     "autoprefixer": "^10.4.5",
     "eslint": "8.14.0",
     "eslint-config-next": "12.1.5",

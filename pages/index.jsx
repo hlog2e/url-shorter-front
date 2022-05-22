@@ -1,9 +1,39 @@
 import NavBar from "../components/NavBar";
-import MainIntroduceSection from "../containers/MainIntroduceSection";
-import UrlShortSection from "../containers/UrlShortSection";
+import MainIntroduceSection from "../components/section/MainIntroduceSection";
+import UrlShortSection from "../components/section/UrlShortSection";
 import Head from "next/head";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [localStorageUrls, setLocalStorageUrls] = useState([]);
+
+  const handleChangeLocalStorageUrls = (data) => {
+    let long_url = data.origin_url;
+    const short_url = "gourl.kr/" + data.alias;
+
+    if (long_url.length > 32) {
+      long_url = long_url.substr(0, 32);
+      long_url = long_url + "...";
+    }
+    let dumpLocalStorageUrlsState = [];
+    if (localStorageUrls) {
+      dumpLocalStorageUrlsState = [...localStorageUrls];
+    }
+    dumpLocalStorageUrlsState.unshift({
+      long_url: long_url,
+      short_url: short_url,
+    });
+
+    if (dumpLocalStorageUrlsState.length > 3) {
+      dumpLocalStorageUrlsState = dumpLocalStorageUrlsState.slice(0, 3);
+    }
+    setLocalStorageUrls(dumpLocalStorageUrlsState);
+    window.localStorage.setItem("urls", JSON.stringify(localStorageUrls));
+  };
+
+  useEffect(() => {
+    setLocalStorageUrls(JSON.parse(window.localStorage.getItem("urls")));
+  }, []);
   return (
     <>
       <Head>
@@ -16,10 +46,12 @@ export default function Home() {
       </Head>
 
       <NavBar />
-      <section className="h-[calc(100vh-56px)] relative">
-        <MainIntroduceSection />
-        <UrlShortSection />
-      </section>
+
+      <MainIntroduceSection />
+      <UrlShortSection
+        localStorage={localStorageUrls}
+        handleChangeLocalStorageUrls={handleChangeLocalStorageUrls}
+      />
     </>
   );
 }
