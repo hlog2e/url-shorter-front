@@ -14,17 +14,23 @@ export default function NavBar() {
               <a className="text-2xl cursor-pointer font-jalnan">GOURL</a>
             </Link>
             <nav className="hidden md:container md:justify-between md:w-1/4 md:flex ">
-              <div className="cursor-pointer">링크생성</div>
-              <div className="cursor-pointer">소개</div>
+              <div className="p-1 rounded-lg cursor-pointe hover:bg-slate-200">
+                링크생성
+              </div>
+              <div className="p-1 rounded-lg cursor-pointe hover:bg-slate-200">
+                소개
+              </div>
               <div
-                className="cursor-pointer"
+                className="p-1 rounded-lg cursor-pointe hover:bg-slate-200"
                 onClick={() => {
                   window.ChannelIO("showMessenger");
                 }}
               >
                 신고
               </div>
-              <div className="cursor-pointer">후원</div>
+              <div className="p-1 rounded-lg cursor-pointe hover:bg-slate-200">
+                후원
+              </div>
             </nav>
             {dropDownOpened ? (
               <IconXmark
