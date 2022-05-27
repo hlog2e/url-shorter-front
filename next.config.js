@@ -14,11 +14,11 @@ const nextConfig = {
     return [
       {
         source: "/:alias",
-        destination: "http://localhost:3001/url/:alias",
+        destination: process.env.API_SERVER + "/url/:alias",
       },
       {
         source: "/api/url",
-        destination: "http://localhost:3001/url",
+        destination: process.env.API_SERVER + "/url",
       },
     ];
   },

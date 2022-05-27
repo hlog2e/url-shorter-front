@@ -9,9 +9,7 @@ export default function MainIntroduceSection() {
           <h1 className="text-4xl font-semibold md:text-6xl">
             링크 커스터마이징
           </h1>
-          <h1 className="ml-5 text-4xl font-semibold md:text-6xl">
-            'gourl.kr'
-          </h1>
+          <h1 className="ml-5 text-4xl font-semibold md:text-6xl">gourl.kr</h1>
         </div>
         <div className="text-2xl font-semibold md:text-3xl mt-7">
           <TypewriterComponent
