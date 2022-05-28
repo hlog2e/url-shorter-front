@@ -1,7 +1,7 @@
 import NavBar from "../components/NavBar";
 import MainIntroduceSection from "../components/section/MainIntroduceSection";
 import UrlShortSection from "../components/section/UrlShortSection";
-import Head from "next/head";
+import { NextSeo } from "next-seo";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -36,15 +36,21 @@ export default function Home() {
   }, []);
   return (
     <>
-      <Head>
-        <title>GOURL | 커스텀 단축 URL</title>
-        <meta
-          name="description"
-          content="외우기 쉬운 나만의 단축 링크 GOURL"
-        ></meta>
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-      </Head>
-
+      <NextSeo
+        title="GOURL | 커스텀 단축 링크"
+        description="외우기 쉬운 나만의 단축 링크 GOURL"
+        openGraph={{
+          type: "website",
+          url: "https://gourl.kr",
+          title: "GOURL | 커스텀 단축 링크",
+          description: "나만의 단축 링크를 생성해보세요!",
+          images: [
+            {
+              url: "/og_gourl.png",
+            },
+          ],
+        }}
+      />
       <NavBar />
 
       <MainIntroduceSection />
