@@ -27,13 +27,18 @@ export default function Home() {
     if (dumpLocalStorageUrlsState.length > 3) {
       dumpLocalStorageUrlsState = dumpLocalStorageUrlsState.slice(0, 3);
     }
+
     setLocalStorageUrls(dumpLocalStorageUrlsState);
-    window.localStorage.setItem("urls", JSON.stringify(localStorageUrls));
+    window.localStorage.setItem(
+      "urls",
+      JSON.stringify(dumpLocalStorageUrlsState)
+    );
   };
 
   useEffect(() => {
     setLocalStorageUrls(JSON.parse(window.localStorage.getItem("urls")));
   }, []);
+
   return (
     <>
       <NextSeo
