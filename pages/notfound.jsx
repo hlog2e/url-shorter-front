@@ -1,8 +1,13 @@
 import DivWaves from "../public/waves.svg";
+import Head from "next/head";
 
-export default function Page404() {
+export default function NotFound() {
   return (
     <div className="h-screen ">
+      <Head>
+        <title>GOURL | Not Found | 404</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <div className="flex flex-col items-center justify-center text-white bg-blue-600 h-2/5">
         <div className="flex flex-col items-center ">
           <h1 className="text-4xl font-semibold md:text-6xl">404 Not Found</h1>
