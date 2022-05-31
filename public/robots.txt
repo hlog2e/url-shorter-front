@@ -1,4 +1,4 @@
 User-agent: *
-Disallow: /
-Allow: /$
+Disallow:
+Allow: /
 Sitemap: https://gourl.kr/sitemap.xml
