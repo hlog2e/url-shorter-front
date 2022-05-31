@@ -3,6 +3,8 @@ import MainIntroduceSection from "../components/section/MainIntroduceSection";
 import UrlShortSection from "../components/section/UrlShortSection";
 import { NextSeo } from "next-seo";
 import { useEffect, useState } from "react";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export default function Home() {
   const [localStorageUrls, setLocalStorageUrls] = useState([]);
@@ -41,6 +43,7 @@ export default function Home() {
 
   return (
     <>
+      <ToastContainer />
       <NextSeo
         title="GOURL | 커스텀 단축 링크"
         description="외우기 쉬운 나만의 단축 링크 GOURL"

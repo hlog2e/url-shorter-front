@@ -4,6 +4,7 @@ import IconCircleDown from "../../public/icons/circle-down.svg";
 import { useState } from "react";
 import axios from "axios";
 import UrlLoggerContainer from "../UrlLogger/UrlLoggerContainer";
+import { toast } from "react-toastify";
 
 export default function UrlShortSection(props) {
   const [urlInput, setUrlInput] = useState({
@@ -23,6 +24,7 @@ export default function UrlShortSection(props) {
         alias: urlInput.alias,
       })
       .then((res) => {
+        console.log(res);
         props.handleChangeLocalStorageUrls({
           origin_url: res.data.origin_url,
           alias: res.data.alias,
@@ -34,6 +36,20 @@ export default function UrlShortSection(props) {
       })
       .catch((err) => {
         console.error(err);
+        if (err.response.status === 400) {
+          toast.error(err.response.data.message, {
+            position: "bottom-center",
+            autoClose: 5000,
+          });
+        } else {
+          toast.error(
+            "URL 단축 중 오류가 발생하였습니다. 잠시 후 다시 시도해주세요.",
+            {
+              position: "bottom-center",
+              autoClose: 5000,
+            }
+          );
+        }
       });
   };
   return (
