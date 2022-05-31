@@ -24,7 +24,6 @@ export default function UrlShortSection(props) {
         alias: urlInput.alias,
       })
       .then((res) => {
-        console.log(res);
         props.handleChangeLocalStorageUrls({
           origin_url: res.data.origin_url,
           alias: res.data.alias,
