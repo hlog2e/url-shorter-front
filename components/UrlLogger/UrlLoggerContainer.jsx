@@ -2,7 +2,7 @@ import UrlLoggerItem from "./UrlLoggerItem";
 
 export default function UrlLoggerContainer(props) {
   return (
-    <div className="flex flex-col w-9/12 mt-5 md:w-3/5 max-w-[550px]">
+    <div className="flex flex-col  mt-5  max-w-[550px]">
       {props.localStorage ? (
         <>
           {props.localStorage.map((item) => (

@@ -39,6 +39,12 @@ export default function Home() {
 
   useEffect(() => {
     setLocalStorageUrls(JSON.parse(window.localStorage.getItem("urls")));
+    var ads = document.getElementsByClassName("adsbygoogle").length;
+    for (var i = 0; i < ads; i++) {
+      try {
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      } catch (e) {}
+    }
   }, []);
 
   return (
