@@ -54,8 +54,8 @@ export default function UrlShortSection(props) {
   return (
     <>
       <div className="flex flex-col items-center md:-mt-12">
-        <div className="flex justify-between w-full ">
-          <div className="max-w-[260px] w-full  mt-20 px-6">
+        <div className="flex justify-center w-full md:justify-between ">
+          <div className="max-w-[260px] w-full  mt-20 px-6 md:block hidden">
             <ins
               className="adsbygoogle"
               style={{ display: "block" }}
@@ -102,7 +102,7 @@ export default function UrlShortSection(props) {
               className=""
             />
           </form>
-          <div className="max-w-[260px] w-full  mt-20 px-6">
+          <div className="max-w-[260px] w-full  mt-20 px-6 md:block hidden">
             <ins
               className="adsbygoogle"
               style={{ display: "block" }}
