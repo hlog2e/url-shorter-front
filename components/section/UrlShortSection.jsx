@@ -58,11 +58,13 @@ export default function UrlShortSection(props) {
           <div className="max-w-[260px] w-full  mt-20 px-6 md:block hidden">
             <ins
               className="adsbygoogle"
-              style={{ display: "block" }}
+              style={{
+                display: "inline-block",
+                width: "210px",
+                height: "40vh",
+              }}
               data-ad-client="ca-pub-7721010112824900"
               data-ad-slot="9014386172"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
             />
           </div>
 
@@ -108,14 +110,16 @@ export default function UrlShortSection(props) {
               className=""
             />
           </form>
-          <div className="max-w-[260px] w-full  mt-20 px-6 md:block hidden">
+          <div className="max-w-[260px] w-full   mt-20 px-6 md:block hidden">
             <ins
               className="adsbygoogle"
-              style={{ display: "block" }}
+              style={{
+                display: "inline-block",
+                width: "210px",
+                height: "40vh",
+              }}
               data-ad-client="ca-pub-7721010112824900"
               data-ad-slot="9014386172"
-              data-ad-format="auto"
-              data-full-width-responsive="true"
             />
           </div>
         </div>
