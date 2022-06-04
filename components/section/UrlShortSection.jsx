@@ -85,13 +85,19 @@ export default function UrlShortSection(props) {
               <IconMagic className="p-2 w-9" />
               <p className="p-1 font-semibold">커스터마이징 (선택)</p>
             </span>
-            <input
-              value={urlInput.alias}
-              onChange={onChangeUrlInput}
-              name="alias"
-              className="w-full px-3 py-3 border rounded-lg shadow focus:ring focus:outline-none focus:bg-white"
-              placeholder="gourl.kr/"
-            />
+            <span className="flex">
+              <div className="px-3 py-3 font-semibold text-gray-400 bg-white border rounded-tl-lg rounded-bl-lg shadow">
+                gourl.kr/
+              </div>
+              <input
+                value={urlInput.alias}
+                onChange={onChangeUrlInput}
+                name="alias"
+                className="w-full px-3 py-3 border rounded-tr-lg rounded-br-lg shadow focus:ring focus:outline-none focus:bg-white"
+                placeholder="나만의링크"
+              />
+            </span>
+
             <span className="flex justify-end">
               <button className="px-5 py-3 mt-6 font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl">
                 단축!
