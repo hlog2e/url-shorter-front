@@ -5,6 +5,7 @@ import { NextSeo } from "next-seo";
 import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import SecondIntroduceSection from "../components/section/SecondIntroduceSection";
 
 export default function Home() {
   const [localStorageUrls, setLocalStorageUrls] = useState([]);
@@ -66,12 +67,16 @@ export default function Home() {
         }}
       />
       <NavBar />
-
-      <MainIntroduceSection />
-      <UrlShortSection
-        localStorage={localStorageUrls}
-        handleChangeLocalStorageUrls={handleChangeLocalStorageUrls}
-      />
+      <section className="min-h-screen ">
+        <MainIntroduceSection />
+        <UrlShortSection
+          localStorage={localStorageUrls}
+          handleChangeLocalStorageUrls={handleChangeLocalStorageUrls}
+        />
+      </section>
+      <section className="h-[calc(100vh-56px)] ">
+        <SecondIntroduceSection />
+      </section>
     </>
   );
 }
