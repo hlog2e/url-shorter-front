@@ -14,7 +14,7 @@ export default function UrlLoggerItem(props) {
           {props.short_url}
         </strong>
         <CopyToClipboard text={props.short_url}>
-          <button className="mt-2 text-white text-blue-400 rounded-lg hover:bg-blue-200 md:m-0 bg-sky-100 md:px-2 md:ml-3">
+          <button className="mt-2 text-blue-400 rounded-lg hover:bg-blue-200 md:m-0 bg-sky-100 md:px-2 md:ml-3">
             복사
           </button>
         </CopyToClipboard>
