@@ -67,14 +67,14 @@ export default function Home() {
         }}
       />
       <NavBar />
-      <section className="min-h-screen ">
+      <section className="min-h-screen" id="shortSection">
         <MainIntroduceSection />
         <UrlShortSection
           localStorage={localStorageUrls}
           handleChangeLocalStorageUrls={handleChangeLocalStorageUrls}
         />
       </section>
-      <section className="h-[calc(100vh-56px)] ">
+      <section className="h-[calc(100vh-56px)]" id="secondIntroduceSection">
         <SecondIntroduceSection />
       </section>
     </>
