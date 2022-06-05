@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SecondIntroduceSection from "../components/section/SecondIntroduceSection";
+import Footer from "../components/section/Footer";
 
 export default function Home() {
   const [localStorageUrls, setLocalStorageUrls] = useState([]);
@@ -74,9 +75,10 @@ export default function Home() {
           handleChangeLocalStorageUrls={handleChangeLocalStorageUrls}
         />
       </section>
-      <section className="h-[calc(100vh-56px)]" id="secondIntroduceSection">
+      <section className="" id="secondIntroduceSection">
         <SecondIntroduceSection />
       </section>
+      <Footer />
     </>
   );
 }

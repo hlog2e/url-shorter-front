@@ -5,7 +5,7 @@ export default function SecondIntroduceSection(props) {
     <div className="flex items-center justify-center w-full py-32 mt-32 bg-white">
       <div className="flex flex-col items-center justify-between w-[1000px] md:flex-row bg-white">
         <img className="w-[500px]  px-4" src="/link.svg" />
-        <div className="flex flex-col ">
+        <div className="flex flex-col px-4 ">
           <h1 className="text-4xl font-jalnan">GOURL</h1>
           <h2 className="mt-6 text-3xl font-semibold">
             링크를 빠르고 간편하게
