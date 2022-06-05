@@ -67,49 +67,47 @@ export default function UrlShortSection(props) {
               data-ad-slot="9014386172"
             />
           </div>
-
-          <form
-            className="flex-col max-w-[550px] items-center w-9/12 md:w-3/5"
-            onSubmit={onSubmitUrlInput}
-          >
-            <span className="flex mb-2">
-              <IconLink className="p-2 w-9" />
-              <p className="p-1 font-semibold">단축할 URL</p>
-            </span>
-            <input
-              value={urlInput.originUrl}
-              onChange={onChangeUrlInput}
-              name="originUrl"
-              className="w-full px-3 py-3 border rounded-lg shadow focus:ring focus:outline-none focus:bg-white"
-              placeholder="단축이 필요한 URL 입력!"
-            />
-            <span className="flex mt-6 mb-2">
-              <IconMagic className="p-2 w-9" />
-              <p className="p-1 font-semibold">커스터마이징 (선택)</p>
-            </span>
-            <span className="flex">
-              <div className="px-3 py-3 font-semibold text-gray-400 bg-white border rounded-tl-lg rounded-bl-lg shadow">
-                gourl.kr/
-              </div>
+          <div className="flex-col max-w-[550px] items-center w-9/12 md:w-3/5">
+            <form className="w-full" onSubmit={onSubmitUrlInput}>
+              <span className="flex mb-2">
+                <IconLink className="p-2 w-9" />
+                <p className="p-1 font-semibold">단축할 URL</p>
+              </span>
               <input
-                value={urlInput.alias}
+                value={urlInput.originUrl}
                 onChange={onChangeUrlInput}
-                name="alias"
-                className="w-full px-3 py-3 border rounded-tr-lg rounded-br-lg shadow focus:ring focus:outline-none focus:bg-white"
-                placeholder="나만의링크"
+                name="originUrl"
+                className="w-full px-3 py-3 border rounded-lg shadow focus:ring focus:outline-none focus:bg-white"
+                placeholder="단축이 필요한 URL 입력!"
               />
-            </span>
+              <span className="flex mt-6 mb-2">
+                <IconMagic className="p-2 w-9" />
+                <p className="p-1 font-semibold">커스터마이징 (선택)</p>
+              </span>
+              <span className="flex">
+                <div className="px-3 py-3 font-semibold text-gray-400 bg-white border rounded-tl-lg rounded-bl-lg shadow">
+                  gourl.kr/
+                </div>
+                <input
+                  value={urlInput.alias}
+                  onChange={onChangeUrlInput}
+                  name="alias"
+                  className="w-full px-3 py-3 border rounded-tr-lg rounded-br-lg shadow focus:ring focus:outline-none focus:bg-white"
+                  placeholder="나만의링크"
+                />
+              </span>
 
-            <span className="flex justify-end">
-              <button className="px-5 py-3 mt-6 font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl">
-                단축!
-              </button>
-            </span>
+              <span className="flex justify-end">
+                <button className="px-5 py-3 mt-6 font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl">
+                  단축!
+                </button>
+              </span>
+            </form>
             <UrlLoggerContainer
               localStorage={props.localStorage}
               className=""
             />
-          </form>
+          </div>
           <div className="max-w-[260px] w-full   mt-20 px-6 md:block hidden">
             <ins
               className="adsbygoogle"
