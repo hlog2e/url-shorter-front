@@ -14,8 +14,8 @@ export default function Home() {
     let long_url = data.origin_url;
     const short_url = "gourl.kr/" + data.alias;
 
-    if (long_url.length > 32) {
-      long_url = long_url.substr(0, 32);
+    if (long_url.length > 25) {
+      long_url = long_url.substr(0, 25);
       long_url = long_url + "...";
     }
     let dumpLocalStorageUrlsState = [];
