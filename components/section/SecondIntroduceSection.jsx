@@ -5,11 +5,11 @@ export default function SecondIntroduceSection(props) {
   return (
     <div className="flex items-center justify-center w-full py-32 mt-32 bg-white">
       <div className="flex flex-col items-center justify-between w-[1000px] md:flex-row bg-white">
-        <Fade duration={2000} bottom>
+        <Fade duration={1500} bottom>
           <img className="w-[500px]  px-4" src="/link.svg" />
         </Fade>
 
-        <Fade duration={2000} bottom>
+        <Fade duration={1500} delay={500} bottom>
           <div className="flex flex-col px-4 ">
             <h1 className="text-4xl font-jalnan">GOURL</h1>
             <h2 className="mt-6 text-3xl font-semibold">
