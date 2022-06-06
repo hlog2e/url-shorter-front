@@ -12,9 +12,20 @@ export default function UrlShortSection(props) {
     alias: "",
   });
 
-  const onChangeUrlInput = (e) => {
-    const { name, value } = e.target;
-    setUrlInput({ ...urlInput, [name]: value });
+  const onChangeOriginUrlInput = (e) => {
+    setUrlInput({ ...urlInput, originUrl: e.target.value });
+  };
+  const onChangeAliasInput = (e) => {
+    const aliasRegex = /\s|\//;
+
+    if (!aliasRegex.test(e.target.value)) {
+      setUrlInput({ ...urlInput, alias: e.target.value });
+    } else {
+      toast.error("커스텀 URL에 공백 또는 '/'는 사용할 수 없습니다.", {
+        position: "bottom-center",
+        autoClose: 5000,
+      });
+    }
   };
   const onSubmitUrlInput = (e) => {
     e.preventDefault();
@@ -51,6 +62,7 @@ export default function UrlShortSection(props) {
         }
       });
   };
+
   return (
     <>
       <div className="flex flex-col items-center md:-mt-12">
@@ -75,7 +87,7 @@ export default function UrlShortSection(props) {
               </span>
               <input
                 value={urlInput.originUrl}
-                onChange={onChangeUrlInput}
+                onChange={onChangeOriginUrlInput}
                 name="originUrl"
                 className="w-full px-3 py-3 border rounded-lg shadow focus:ring focus:outline-none focus:bg-white"
                 placeholder="단축이 필요한 URL 입력!"
@@ -90,7 +102,7 @@ export default function UrlShortSection(props) {
                 </div>
                 <input
                   value={urlInput.alias}
-                  onChange={onChangeUrlInput}
+                  onChange={onChangeAliasInput}
                   name="alias"
                   className="w-full px-3 py-3 border rounded-tr-lg rounded-br-lg shadow focus:ring focus:outline-none focus:bg-white"
                   placeholder="나만의링크"
