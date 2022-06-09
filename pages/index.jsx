@@ -7,6 +7,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import SecondIntroduceSection from "../components/section/SecondIntroduceSection";
 import Footer from "../components/section/Footer";
+import Head from "next/head";
 
 export default function Home() {
   const [localStorageUrls, setLocalStorageUrls] = useState([]);
@@ -52,9 +53,12 @@ export default function Home() {
   return (
     <>
       <ToastContainer />
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <NextSeo
-        title="GOURL | 커스텀 단축 링크"
-        description="외우기 쉬운 나만의 단축 링크 GOURL"
+        title="GOURL | 커스텀 단축 링크 - URL 단축"
+        description="GOURL, 단축URL, URL단축, 링크줄이기, URL줄이기, 주소줄이기, 링크단축, 단축링크, 단축주소, 주소단축, URL단축서비스, 인터넷주소줄이기"
         openGraph={{
           type: "website",
           url: "https://gourl.kr",
