@@ -65,20 +65,9 @@ export default function UrlShortSection(props) {
 
   return (
     <>
-      <div className="flex flex-col items-center md:-mt-12">
+      <div className="flex flex-col items-center md:-mt-12 ">
         <div className="flex justify-center w-full md:justify-between ">
-          <div className="max-w-[260px] w-full  mt-20 px-6 md:block hidden">
-            <ins
-              className="adsbygoogle"
-              style={{
-                display: "inline-block",
-                width: "210px",
-                height: "40vh",
-              }}
-              data-ad-client="ca-pub-7721010112824900"
-              data-ad-slot="9014386172"
-            />
-          </div>
+          <div className="max-w-[260px] w-full  mt-20x px-6 md:block hidden ads "></div>
           <div className="flex-col max-w-[550px] items-center w-9/12 md:w-3/5">
             <form className="w-full" onSubmit={onSubmitUrlInput}>
               <span className="flex mb-2">
@@ -115,23 +104,57 @@ export default function UrlShortSection(props) {
                 </button>
               </span>
             </form>
-            <UrlLoggerContainer
-              localStorage={props.localStorage}
-              className=""
-            />
+            <UrlLoggerContainer localStorage={props.localStorage} />
           </div>
-          <div className="max-w-[260px] w-full   mt-20 px-6 md:block hidden">
-            <ins
-              className="adsbygoogle"
-              style={{
-                display: "inline-block",
-                width: "210px",
-                height: "40vh",
-              }}
-              data-ad-client="ca-pub-7721010112824900"
-              data-ad-slot="9014386172"
-            />
-          </div>
+          <div className="max-w-[260px] w-full mt-20 px-6 md:block hidden ads"></div>
+        </div>
+      </div>
+      <div className="flex justify-center w-full h-32 px-2 mt-10">
+        <div className="max-w-[400px]  ">
+          <iframe
+            src="https://ads-partners.coupang.com/widgets.html?id=588224&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"
+            width="100%"
+            height="128"
+            frameborder="0"
+            className="border rounded-xl"
+            scrolling="no"
+            referrerpolicy="unsafe-url"
+          ></iframe>
+        </div>
+        <div className="max-w-[400px]  ">
+          <iframe
+            src="https://ads-partners.coupang.com/widgets.html?id=588225&template=carousel&trackingCode=AF9582893&subId=&width=680&height=128"
+            width="100%"
+            height="128"
+            className="border rounded-xl"
+            frameborder="0"
+            scrolling="no"
+            referrerpolicy="unsafe-url"
+          ></iframe>
+        </div>
+      </div>
+      <div className="flex justify-center w-full h-32 px-2">
+        <div className="max-w-[400px]  ">
+          <iframe
+            src="https://ads-partners.coupang.com/widgets.html?id=588329&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"
+            width="100%"
+            height="128"
+            frameborder="0"
+            className="border rounded-xl"
+            scrolling="no"
+            referrerpolicy="unsafe-url"
+          ></iframe>
+        </div>
+        <div className="max-w-[400px]  ">
+          <iframe
+            src="https://ads-partners.coupang.com/widgets.html?id=588330&template=carousel&trackingCode=AF9582893&subId=&width=680&height=128"
+            width="100%"
+            height="128"
+            className="border rounded-xl"
+            frameborder="0"
+            scrolling="no"
+            referrerpolicy="unsafe-url"
+          ></iframe>
         </div>
       </div>
 
