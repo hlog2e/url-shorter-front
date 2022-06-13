@@ -115,11 +115,11 @@ export default function UrlShortSection(props) {
             src="https://ads-partners.coupang.com/widgets.html?id=588224&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"
             width="100%"
             height="128"
-            frameborder="0"
+            frameBorder="0"
             className="border rounded-xl"
             scrolling="no"
             referrerpolicy="unsafe-url"
-          ></iframe>
+          />
         </div>
         <div className="max-w-[400px]  ">
           <iframe
@@ -127,10 +127,10 @@ export default function UrlShortSection(props) {
             width="100%"
             height="128"
             className="border rounded-xl"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             referrerpolicy="unsafe-url"
-          ></iframe>
+          />
         </div>
       </div>
       <div className="flex justify-center w-full h-32 px-2">
@@ -139,11 +139,11 @@ export default function UrlShortSection(props) {
             src="https://ads-partners.coupang.com/widgets.html?id=588329&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"
             width="100%"
             height="128"
-            frameborder="0"
+            frameBorder="0"
             className="border rounded-xl"
             scrolling="no"
             referrerpolicy="unsafe-url"
-          ></iframe>
+          />
         </div>
         <div className="max-w-[400px]  ">
           <iframe
@@ -151,10 +151,10 @@ export default function UrlShortSection(props) {
             width="100%"
             height="128"
             className="border rounded-xl"
-            frameborder="0"
+            frameBorder="0"
             scrolling="no"
             referrerpolicy="unsafe-url"
-          ></iframe>
+          />
         </div>
       </div>
 
