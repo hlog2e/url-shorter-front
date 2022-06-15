@@ -66,8 +66,15 @@ export default function UrlShortSection(props) {
   return (
     <>
       <div className="flex flex-col items-center md:-mt-12 ">
-        <div className="flex justify-center w-full md:justify-between ">
-          <div className="max-w-[260px] w-full  mt-20x px-6 md:block hidden ads "></div>
+        <div className="flex justify-center w-full lg:justify-between ">
+          <div className="max-w-[160px] w-full ml-16 lg:block hidden">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-RXMmp4KxTX1fvo3K"
+              data-ad-width="160"
+              data-ad-height="600"
+            ></ins>
+          </div>
           <div className="flex-col max-w-[550px] items-center w-9/12 md:w-3/5">
             <form className="w-full" onSubmit={onSubmitUrlInput}>
               <span className="flex mb-2">
@@ -97,7 +104,6 @@ export default function UrlShortSection(props) {
                   placeholder="나만의링크"
                 />
               </span>
-
               <span className="flex justify-end">
                 <button className="px-5 py-3 mt-6 font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl">
                   단축!
@@ -106,10 +112,17 @@ export default function UrlShortSection(props) {
             </form>
             <UrlLoggerContainer localStorage={props.localStorage} />
           </div>
-          <div className="max-w-[260px] w-full mt-20 px-6 md:block hidden ads"></div>
+          <div className="max-w-[160px] w-full mr-16 lg:block hidden">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-a1LhtjkiJN1WgokW"
+              data-ad-width="160"
+              data-ad-height="600"
+            ></ins>
+          </div>
         </div>
       </div>
-      <div className="flex justify-center w-full h-32 px-2 mt-10">
+      <div className="flex justify-center w-full h-32 px-2 ">
         <div className="max-w-[400px]  ">
           <iframe
             src="https://ads-partners.coupang.com/widgets.html?id=588224&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"

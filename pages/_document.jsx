@@ -67,6 +67,11 @@ export default function Document() {
       });`,
           }}
         />
+        <script
+          type="text/javascript"
+          src="https://t1.daumcdn.net/kas/static/ba.min.js"
+          async
+        ></script>
       </body>
     </Html>
   );
