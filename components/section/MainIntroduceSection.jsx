@@ -31,7 +31,7 @@ export default function MainIntroduceSection() {
           />
         </div>
       </div>
-      <div className="w-full h-40 ">
+      <div className="w-full md:h-40">
         <DivWaves className="w-full h-10 -mt-[1px] md:h-28" />
       </div>
     </>
