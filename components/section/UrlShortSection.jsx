@@ -122,51 +122,49 @@ export default function UrlShortSection(props) {
           </div>
         </div>
       </div>
-      <div className="flex justify-center w-full h-32 px-2 ">
-        <div className="max-w-[400px]  ">
-          <iframe
-            src="https://ads-partners.coupang.com/widgets.html?id=588224&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"
-            width="100%"
-            height="128"
-            frameBorder="0"
-            className="border rounded-xl"
-            scrolling="no"
-            referrerpolicy="unsafe-url"
+      <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:flex-row md:h-16 lg:-mt-32">
+        <div className="max-w-[400px] m-2">
+          <ins
+            className="kakao_ad_area"
+            data-ad-unit="DAN-tuCfABecVnoSaRDE"
+            data-ad-width="320"
+            data-ad-height="50"
           />
         </div>
-        <div className="max-w-[400px]  ">
-          <iframe
-            src="https://ads-partners.coupang.com/widgets.html?id=588225&template=carousel&trackingCode=AF9582893&subId=&width=680&height=128"
-            width="100%"
-            height="128"
-            className="border rounded-xl"
-            frameBorder="0"
-            scrolling="no"
-            referrerpolicy="unsafe-url"
+        <div className="max-w-[400px] m-2">
+          <ins
+            className="kakao_ad_area"
+            data-ad-unit="DAN-2Dpo7KuqynYsOoPm"
+            data-ad-width="320"
+            data-ad-height="50"
           />
         </div>
       </div>
-      <div className="flex justify-center w-full h-32 px-2">
-        <div className="max-w-[400px]  ">
-          <iframe
-            src="https://ads-partners.coupang.com/widgets.html?id=588329&template=carousel&trackingCode=AF9582893&subId=&width=689&height=128"
-            width="100%"
-            height="128"
-            frameBorder="0"
-            className="border rounded-xl"
-            scrolling="no"
-            referrerpolicy="unsafe-url"
+      <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:h-16 md:flex-row">
+        <div className="max-w-[400px] m-2">
+          <ins
+            className="kakao_ad_area"
+            data-ad-unit="DAN-dwrRt90Spn5WKEEI"
+            data-ad-width="320"
+            data-ad-height="50"
           />
         </div>
-        <div className="max-w-[400px]  ">
-          <iframe
-            src="https://ads-partners.coupang.com/widgets.html?id=588330&template=carousel&trackingCode=AF9582893&subId=&width=680&height=128"
-            width="100%"
-            height="128"
-            className="border rounded-xl"
-            frameBorder="0"
-            scrolling="no"
-            referrerpolicy="unsafe-url"
+        <div className="max-w-[400px] m-2">
+          <ins
+            className="kakao_ad_area"
+            data-ad-unit="DAN-ZlMPcRQKmla35V11"
+            data-ad-width="320"
+            data-ad-height="50"
+          />
+        </div>
+      </div>
+      <div className=" justify-center w-full h-[90] px-2 md:h-16 md:flex hidden">
+        <div className="max-w-[728] m-2">
+          <ins
+            className="kakao_ad_area"
+            data-ad-unit="DAN-LeTRFJ9V1g5PnLlx"
+            data-ad-width="728"
+            data-ad-height="90"
           />
         </div>
       </div>
