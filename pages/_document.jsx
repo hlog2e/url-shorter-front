@@ -71,7 +71,12 @@ export default function Document() {
           type="text/javascript"
           src="https://t1.daumcdn.net/kas/static/ba.min.js"
           async
-        ></script>
+        />
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7721010112824900"
+          crossOrigin="anonymous"
+        />
       </body>
     </Html>
   );
