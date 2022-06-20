@@ -140,34 +140,6 @@ export default function UrlShortSection(props) {
           />
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:h-16 md:flex-row">
-        <div className="max-w-[400px] m-2">
-          <ins
-            className="kakao_ad_area"
-            data-ad-unit="DAN-dwrRt90Spn5WKEEI"
-            data-ad-width="320"
-            data-ad-height="50"
-          />
-        </div>
-        <div className="max-w-[400px] m-2">
-          <ins
-            className="kakao_ad_area"
-            data-ad-unit="DAN-ZlMPcRQKmla35V11"
-            data-ad-width="320"
-            data-ad-height="50"
-          />
-        </div>
-      </div>
-      <div className=" justify-center w-full h-[90] px-2 md:h-16 md:flex hidden">
-        <div className="max-w-[728] m-2">
-          <ins
-            className="kakao_ad_area"
-            data-ad-unit="DAN-LeTRFJ9V1g5PnLlx"
-            data-ad-width="728"
-            data-ad-height="90"
-          />
-        </div>
-      </div>
 
       <IconCircleDown className="absolute w-6 opacity-25 animate-bounce left-1/2 right-1/2 bottom-10" />
     </>
