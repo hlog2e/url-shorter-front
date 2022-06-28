@@ -122,22 +122,64 @@ export default function UrlShortSection(props) {
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:flex-row md:h-16 lg:-mt-32">
-        <div className="max-w-[400px] m-2">
-          <ins
-            className="kakao_ad_area"
-            data-ad-unit="DAN-tuCfABecVnoSaRDE"
-            data-ad-width="320"
-            data-ad-height="50"
-          />
+      <section>
+        <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:flex-row md:h-16 lg:-mt-32">
+          <div className="max-w-[400px] m-2">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-tuCfABecVnoSaRDE"
+              data-ad-width="320"
+              data-ad-height="50"
+            />
+          </div>
+          <div className="max-w-[400px] m-2">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-2Dpo7KuqynYsOoPm"
+              data-ad-width="320"
+              data-ad-height="50"
+            />
+          </div>
         </div>
-        <div className="max-w-[400px] m-2">
-          <ins
-            className="kakao_ad_area"
-            data-ad-unit="DAN-2Dpo7KuqynYsOoPm"
-            data-ad-width="320"
-            data-ad-height="50"
-          />
+        <div className="flex  flex-col justify-center items-center w-full h-[100] px-2 md:flex-row md:h-16 lg:-mt-32">
+          <div className="max-w-[400px] m-2">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-jPvhEgOTqZ4XhlhR"
+              data-ad-width="320"
+              data-ad-height="50"
+            />
+          </div>
+          <div className="max-w-[400px] m-2">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-FnEHPke25djn2J0e"
+              data-ad-width="320"
+              data-ad-height="50"
+            />
+          </div>
+        </div>
+      </section>
+      <div>
+        <div className=" justify-center w-full h-[90] px-2 md:h-16 md:flex hidden  mt-36">
+          <div className="max-w-[728] m-2">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-ObWPW8CSkrZT7ivZ"
+              data-ad-width="728"
+              data-ad-height="90"
+            />
+          </div>
+        </div>
+        <div className=" justify-center w-full h-[90] px-2 md:h-16 md:flex hidden mt-12">
+          <div className="max-w-[728] m-2">
+            <ins
+              className="kakao_ad_area"
+              data-ad-unit="DAN-s6PE30Lr0zzGQFZB"
+              data-ad-width="728"
+              data-ad-height="90"
+            />
+          </div>
         </div>
       </div>
 
