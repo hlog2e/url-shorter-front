@@ -123,7 +123,7 @@ export default function UrlShortSection(props) {
         </div>
       </div>
       <section>
-        <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:flex-row md:h-16 lg:-mt-32">
+        <div className="flex flex-col justify-center items-center w-full h-[100] px-2 md:flex-row md:h-16 ">
           <div className="max-w-[400px] m-2">
             <ins
               className="kakao_ad_area"
