@@ -8,9 +8,11 @@ import "react-toastify/dist/ReactToastify.css";
 import SecondIntroduceSection from "../components/section/SecondIntroduceSection";
 import Footer from "../components/section/Footer";
 import Head from "next/head";
+import PopUp from "../components/PopUp";
 
 export default function Home() {
   const [localStorageUrls, setLocalStorageUrls] = useState([]);
+  const [popUpOpen,setPopUpOpen] = useState(true);
 
   const handleChangeLocalStorageUrls = (data) => {
     let long_url = data.origin_url;
@@ -52,6 +54,7 @@ export default function Home() {
 
   return (
     <>
+        <PopUp show={popUpOpen} onClose={()=>{setPopUpOpen(false)}} title={"⚠ 경고 ⚠"} content={"최근 GOURL 서비스를 활용한 피싱 범죄\n가 발생하고 있습니다. GOURL은 절대\n사용자에게 로또를 분석해 준다는 내용,\n사법기관을 사칭하는 등의 문자메시지를\n전송하지 않습니다.\n\nGOURL은 수사기관 협조의 적극 협력하여\n피해자가 발생하지 않도록 노력하겠습니다.\n\n신고된 피싱링크 유형:\n검찰조회, 사건조회, 간편조회등 검찰사칭\n로또 무료분석 등"}/>
       <ToastContainer />
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -79,7 +82,7 @@ export default function Home() {
           handleChangeLocalStorageUrls={handleChangeLocalStorageUrls}
         />
       </section>
-      <section className="" id="secondIntroduceSection">
+      <section id="secondIntroduceSection">
         <SecondIntroduceSection />
       </section>
       <Footer />
