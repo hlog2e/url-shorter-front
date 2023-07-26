@@ -29,38 +29,46 @@ export default function UrlShortSection(props) {
   };
   const onSubmitUrlInput = (e) => {
     e.preventDefault();
-    axios
-      .post("/api/url", {
-        origin_url: urlInput.originUrl,
-        alias: urlInput.alias,
-      })
-      .then((res) => {
-        props.handleChangeLocalStorageUrls({
-          origin_url: res.data.origin_url,
-          alias: res.data.alias,
-        });
-        setUrlInput({
-          originUrl: "",
-          alias: "",
-        });
-      })
-      .catch((err) => {
-        console.error(err);
-        if (err.response.status === 400) {
-          toast.error(err.response.data.message, {
-            position: "bottom-center",
-            autoClose: 5000,
-          });
-        } else {
-          toast.error(
-            "URL 단축 중 오류가 발생하였습니다. 잠시 후 다시 시도해주세요.",
+
+    toast.warning(
+            "URL 단축 악용으로 인해 신규 링크생성을 일시 중단하였습니다. 8월 중으로 새롭게 시스템을 개발하여 재오픈할 예정입니다.",
             {
               position: "bottom-center",
               autoClose: 5000,
-            }
-          );
-        }
-      });
+            });
+
+    // axios
+    //   .post("/api/url", {
+    //     origin_url: urlInput.originUrl,
+    //     alias: urlInput.alias,
+    //   })
+    //   .then((res) => {
+    //     props.handleChangeLocalStorageUrls({
+    //       origin_url: res.data.origin_url,
+    //       alias: res.data.alias,
+    //     });
+    //     setUrlInput({
+    //       originUrl: "",
+    //       alias: "",
+    //     });
+    //   })
+    //   .catch((err) => {
+    //     console.error(err);
+    //     if (err.response.status === 400) {
+    //       toast.error(err.response.data.message, {
+    //         position: "bottom-center",
+    //         autoClose: 5000,
+    //       });
+    //     } else {
+    //       toast.error(
+    //         "URL 단축 중 오류가 발생하였습니다. 잠시 후 다시 시도해주세요.",
+    //         {
+    //           position: "bottom-center",
+    //           autoClose: 5000,
+    //         }
+    //       );
+    //     }
+    //   });
   };
 
   return (

@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-        <PopUp show={popUpOpen} onClose={()=>{setPopUpOpen(false)}} title={"⚠ 경고 ⚠"} content={"최근 GOURL 서비스를 활용한 피싱 범죄\n가 발생하고 있습니다. GOURL은 절대\n사용자에게 로또를 분석해 준다는 내용,\n사법기관을 사칭하는 등의 문자메시지를\n전송하지 않습니다.\n\nGOURL은 수사기관 협조의 적극 협력하여\n피해자가 발생하지 않도록 노력하겠습니다.\n\n신고된 피싱링크 유형:\n검찰조회, 사건조회, 간편조회등 검찰사칭\n로또 무료분석 등"}/>
+        <PopUp show={popUpOpen} onClose={()=>{setPopUpOpen(false)}} title={"⚠ 안내 ⚠"} content={"최근 GOURL을 악용한 불법적인 행위가\n걷잡을 수 없이 증가하였습니다.\n\n따라서 신규 URL 생성을 일시 중단하였습\n니다.\n8월중 시스템을 개편하여 재오픈 하겠습\n니다. 이용에 불편을 끼쳐드려 죄송합니다."}/>
       <ToastContainer />
       <Head>
         <link rel="icon" href="/favicon.ico" />
